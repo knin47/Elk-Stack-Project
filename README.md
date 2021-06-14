@@ -207,9 +207,9 @@ nano /etc/ansible/install-elk.yml
 &ensp; &emsp;      state: started<br>
 &ensp; &emsp;      restart_policy: always<br>
 &ensp; &emsp;      published_ports:<br>
-&ensp; &emsp;       - 5601:5601<br>
-&ensp; &emsp;       - 9200:9200<br>
-&ensp; &emsp;       - 5044:5044
+&ensp; &ensp; &emsp;       - 5601:5601<br>
+&ensp; &ensp; &emsp;       - 9200:9200<br>
+&ensp; &ensp; &emsp;       - 5044:5044
  
   <ul>
 </ul>
