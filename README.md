@@ -155,7 +155,7 @@ nano /etc/ansible/install-elk.yml
 </ul>
 ---<br>
 - name: Configure Elk VM with Docker<br>
-  hosts: elk<br>
+&ensp;  hosts: elk<br>
   remote_user: RedAdmin<br>
   become: true<br>
   tasks:<br>
