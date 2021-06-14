@@ -40,8 +40,17 @@ What does Metricbeat record?<br>
 It records the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-<br><br><br>
 
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML img Tag</title>
+   </head>
+
+   <body>
+      <img src="https://github.com/knin47/Project-1/blob/main/Images/Configuration%20Detail.png?raw=true" alt="Simply Easy Learning" width="200" height="80">
+   </body>
+</html>
 
 
 Access Policies
