@@ -162,7 +162,7 @@ nano /etc/ansible/install-elk.yml
   <ul>
 </ul>
 &ensp;  - name: Install docker.io<br>
-&ensp;    apt:<br>
+&emsp;    apt:<br>
 &ensp; &emsp;     force_apt_get: yes<br>
  &ensp; &emsp;    update_cache: yes<br>
 &ensp;  &emsp;    name: docker.io<br>
