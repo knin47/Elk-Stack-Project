@@ -172,16 +172,16 @@ nano /etc/ansible/install-elk.yml
 </ul>
 &ensp;  - name: Install python3-pip<br>
 &emsp;&nbsp;    apt:<br>
-&ensp;      force_apt_get: yes<br>
- &ensp;     name: python3-pip<br>
- &ensp;     state: present
+&ensp; &emsp;     force_apt_get: yes<br>
+&ensp; &emsp;     name: python3-pip<br>
+&ensp; &emsp;    state: present
  
   <ul>
 </ul>
 &ensp;  - name: Install Docker module<br>
 &emsp;&nbsp;   pip:<br>
-&ensp;      name: docker<br>
-&ensp;      state: present
+&ensp; &emsp;      name: docker<br>
+&ensp; &emsp;      state: present
  
   <ul>
 </ul>
@@ -192,21 +192,21 @@ nano /etc/ansible/install-elk.yml
 </ul>
 &ensp;  - name: use more memory<br>
 &emsp;&nbsp;    sysctl:<br>
- &ensp;     name: vm.max_map_count<br>
-&ensp;      value: '262144'<br>
- &ensp;     state: present<br>
- &ensp;     reload: yes
+&ensp; &emsp;     name: vm.max_map_count<br>
+&ensp; &emsp;      value: '262144'<br>
+&ensp; &emsp;     state: present<br>
+&ensp; &emsp;     reload: yes
 
   <ul>
 </ul>  <ul>
 </ul>
 &ensp;  - name: download and launch a docker elk container<br>
 &emsp;&nbsp;    docker_container:<br>
-&ensp;      name: elk<br>
-&ensp;      image: sebp/elk:761<br>
-&ensp;      state: started<br>
-&ensp;      restart_policy: always<br>
-&ensp;      published_ports:<br>
+&ensp; &emsp;      name: elk<br>
+&ensp; &emsp;      image: sebp/elk:761<br>
+&ensp; &emsp;      state: started<br>
+&ensp; &emsp;      restart_policy: always<br>
+&ensp; &emsp;      published_ports:<br>
 &ensp;        - 5601:5601<br>
 &ensp;        - 9200:9200<br>
 &ensp;        - 5044:5044
