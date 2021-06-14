@@ -66,8 +66,15 @@ What was its IP address?<br>
 10.0.0.9
 
 A summary of the access policies in place can be found in the table below.
-<br><br>
 
+<!DOCTYPE html>
+<html>
+   </head>
+
+   <body>
+      <img src="https://github.com/knin47/Project-1/blob/main/Images/Access%20Policies.png?raw=true" alt="Simply Easy Learning" width="80000" height="300">
+   </body>
+</html>
 
 Elk Configuration
 
