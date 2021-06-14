@@ -152,7 +152,7 @@ nano /etc/ansible/install-elk.yml
 
 ---<br>
 <ul>
-  <li>name</li>
+  name
 </ul>
 - name: Configure Elk VM with Docker<br>
   hosts: elk<br>
