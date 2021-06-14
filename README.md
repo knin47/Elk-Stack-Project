@@ -169,47 +169,47 @@ nano /etc/ansible/install-elk.yml
  &ensp;     state: present
 
 
-  - name: Install python3-pip<br>
-    apt:<br>
-      force_apt_get: yes<br>
-      name: python3-pip<br>
-      state: present
+&ensp;  - name: Install python3-pip<br>
+&ensp;    apt:<br>
+&ensp;      force_apt_get: yes<br>
+ &ensp;     name: python3-pip<br>
+ &ensp;     state: present
  
 
-  - name: Install Docker module<br>
-    pip:<br>
-      name: docker<br>
-      state: present
+&ensp;  - name: Install Docker module<br>
+&ensp;    pip:<br>
+&ensp;      name: docker<br>
+&ensp;      state: present
  
 
-  - name: Increase virtual memory<br>
-    command: sysctl -w vm.max_map_count=262144
+&ensp;  - name: Increase virtual memory<br>
+&ensp;    command: sysctl -w vm.max_map_count=262144
 
 
-  - name: use more memory<br>
-    sysctl:<br>
-      name: vm.max_map_count<br>
-      value: '262144'<br>
-      state: present<br>
-      reload: yes
+&ensp;  - name: use more memory<br>
+&ensp;    sysctl:<br>
+ &ensp;     name: vm.max_map_count<br>
+&ensp;      value: '262144'<br>
+ &ensp;     state: present<br>
+ &ensp;     reload: yes
 
 
-  - name: download and launch a docker elk container<br>
-    docker_container:<br>
-      name: elk<br>
-      image: sebp/elk:761<br>
-      state: started<br>
-      restart_policy: always<br>
-      published_ports:<br>
-        - 5601:5601<br>
-        - 9200:9200<br>
-        - 5044:5044
+&ensp;  - name: download and launch a docker elk container<br>
+&ensp;    docker_container:<br>
+&ensp;      name: elk<br>
+&ensp;      image: sebp/elk:761<br>
+&ensp;      state: started<br>
+&ensp;      restart_policy: always<br>
+&ensp;      published_ports:<br>
+&ensp;        - 5601:5601<br>
+&ensp;        - 9200:9200<br>
+&ensp;        - 5044:5044
  
 
-  - name: Enable docker service<br>
-    systemd:<br>
-      name: docker<br>
-      enabled: yes
+&ensp;  - name: Enable docker service<br>
+&ensp;    systemd:<br>
+&ensp;      name: docker<br>
+&ensp;      enabled: yes
 
 Ctrl + x  to save and exit
 
