@@ -166,7 +166,8 @@ nano /etc/ansible/install-elk.yml
       name: docker.io<br>
       state: present
 
-
+<ul>
+</ul>
   - name: Install python3-pip<br>
     apt:<br>
       force_apt_get: yes<br>
