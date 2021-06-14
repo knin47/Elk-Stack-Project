@@ -150,9 +150,6 @@ touch /etc/ansible/install-elk.yml
 
 nano /etc/ansible/install-elk.yml
 
-<ul>
-  <li></li>
-</ul>
 ---<br>
 <ul>
   <li></li>
