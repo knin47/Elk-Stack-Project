@@ -207,16 +207,16 @@ nano /etc/ansible/install-elk.yml
 &ensp; &emsp;      state: started<br>
 &ensp; &emsp;      restart_policy: always<br>
 &ensp; &emsp;      published_ports:<br>
-&ensp;        - 5601:5601<br>
-&ensp;        - 9200:9200<br>
-&ensp;        - 5044:5044
+&ensp; &ensp;       - 5601:5601<br>
+&ensp; &ensp;       - 9200:9200<br>
+&ensp; &ensp;       - 5044:5044
  
   <ul>
 </ul>
 &ensp;  - name: Enable docker service<br>
 &emsp;&nbsp;    systemd:<br>
-&ensp;      name: docker<br>
-&ensp;      enabled: yes
+&ensp; &emsp;      name: docker<br>
+&ensp; &emsp;      enabled: yes
 
 Ctrl + x  to save and exit
 
