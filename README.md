@@ -43,8 +43,6 @@ The configuration details of each machine may be found below.
 
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>HTML img Tag</title>
    </head>
 
    <body>
