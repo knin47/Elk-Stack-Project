@@ -171,32 +171,37 @@ nano /etc/ansible/install-elk.yml
   <ul>
 </ul>
 &ensp;  - name: Install python3-pip<br>
-&ensp;    apt:<br>
+&emsp;&nbsp;    apt:<br>
 &ensp;      force_apt_get: yes<br>
  &ensp;     name: python3-pip<br>
  &ensp;     state: present
  
-
+  <ul>
+</ul>
 &ensp;  - name: Install Docker module<br>
-&ensp;    pip:<br>
+&emsp;&nbsp;   pip:<br>
 &ensp;      name: docker<br>
 &ensp;      state: present
  
-
+  <ul>
+</ul>
 &ensp;  - name: Increase virtual memory<br>
-&ensp;    command: sysctl -w vm.max_map_count=262144
+&emsp;&nbsp;    command: sysctl -w vm.max_map_count=262144
 
-
+  <ul>
+</ul>
 &ensp;  - name: use more memory<br>
-&ensp;    sysctl:<br>
+&emsp;&nbsp;    sysctl:<br>
  &ensp;     name: vm.max_map_count<br>
 &ensp;      value: '262144'<br>
  &ensp;     state: present<br>
  &ensp;     reload: yes
 
-
+  <ul>
+</ul>  <ul>
+</ul>
 &ensp;  - name: download and launch a docker elk container<br>
-&ensp;    docker_container:<br>
+&emsp;&nbsp;    docker_container:<br>
 &ensp;      name: elk<br>
 &ensp;      image: sebp/elk:761<br>
 &ensp;      state: started<br>
@@ -206,9 +211,10 @@ nano /etc/ansible/install-elk.yml
 &ensp;        - 9200:9200<br>
 &ensp;        - 5044:5044
  
-
+  <ul>
+</ul>
 &ensp;  - name: Enable docker service<br>
-&ensp;    systemd:<br>
+&emsp;&nbsp;    systemd:<br>
 &ensp;      name: docker<br>
 &ensp;      enabled: yes
 
