@@ -154,7 +154,7 @@ nano /etc/ansible/install-elk.yml
 <ul>
   <li></li>
 </ul>
-  name: Configure Elk VM with Docker<br>
+- name: Configure Elk VM with Docker<br>
   hosts: elk<br>
   remote_user: RedAdmin<br>
   become: true<br>
@@ -166,20 +166,32 @@ nano /etc/ansible/install-elk.yml
       name: docker.io<br>
       state: present
 
+<ul>
+  <li></li>
+</ul>
   - name: Install python3-pip<br>
     apt:<br>
       force_apt_get: yes<br>
       name: python3-pip<br>
       state: present
  
+ <ul>
+  <li></li>
+</ul>
   - name: Install Docker module<br>
     pip:<br>
       name: docker<br>
       state: present
  
+ <ul>
+  <li></li>
+</ul>
   - name: Increase virtual memory<br>
     command: sysctl -w vm.max_map_count=262144
 
+<ul>
+  <li></li>
+</ul>
   - name: use more memory<br>
     sysctl:<br>
       name: vm.max_map_count<br>
@@ -187,6 +199,9 @@ nano /etc/ansible/install-elk.yml
       state: present<br>
       reload: yes
 
+<ul>
+  <li></li>
+</ul>
   - name: download and launch a docker elk container<br>
     docker_container:<br>
       name: elk<br>
@@ -198,6 +213,9 @@ nano /etc/ansible/install-elk.yml
         - 9200:9200<br>
         - 5044:5044
  
+ <ul>
+  <li></li>
+</ul>
   - name: Enable docker service<br>
     systemd:<br>
       name: docker<br>
