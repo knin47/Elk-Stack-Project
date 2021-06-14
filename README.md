@@ -46,7 +46,7 @@ The configuration details of each machine may be found below.
    </head>
 
    <body>
-      <img src="https://github.com/knin47/Project-1/blob/main/Images/Configuration%20Detail.png?raw=true" alt="Simply Easy Learning" width="80000" height="100">
+      <img src="https://github.com/knin47/Project-1/blob/main/Images/Configuration%20Detail.png?raw=true" alt="Simply Easy Learning" width="80000" height="1000">
    </body>
 </html>
 
