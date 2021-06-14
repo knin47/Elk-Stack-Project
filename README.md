@@ -92,7 +92,14 @@ Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
+<!DOCTYPE html>
+<html>
+   </head>
 
+   <body>
+      <img src="https://github.com/knin47/Project-1/blob/main/Images/docker%20ps%20for%20elk.png?raw=true" alt="Simply Easy Learning" width="80000" height="300">
+   </body>
+</html>
 
 Target Machines & Beats<br>
 This ELK server is configured to monitor the following machines:<br>
