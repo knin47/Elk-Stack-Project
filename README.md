@@ -1,5 +1,5 @@
 # Project-1
-Automated ELK Stack Deployment
+Automated ELK Stack Deployment<br><br>
 
 The files in this repository were used to configure the network depicted below.
 
@@ -28,7 +28,7 @@ Load balancing ensures that the application will be highly efficient, in additio
 What aspect of security do load balancers protect?<br>
 It helps maximize performance by delegating traffic so the servers are not overloaded which can also prevent DDOS attacks.
 
-What is the advantage of a jump box?
+What is the advantage of a jump box?<br>
 Advantages of a jump box would be that it is highly secure and mainly used for admin tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
