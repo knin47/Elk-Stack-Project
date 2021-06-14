@@ -218,6 +218,8 @@ nano /etc/ansible/install-elk.yml
 &ensp; &emsp;      name: docker<br>
 &ensp; &emsp;      enabled: yes
 
+---
+
 Ctrl + x  to save and exit
 
 Ansible-playbook /etc/ansible/install-elk.yml
