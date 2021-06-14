@@ -156,17 +156,17 @@ nano /etc/ansible/install-elk.yml
 ---<br>
 - name: Configure Elk VM with Docker<br>
 &ensp;  hosts: elk<br>
-  remote_user: RedAdmin<br>
-  become: true<br>
-  tasks:<br>
+&ensp;  remote_user: RedAdmin<br>
+&ensp;  become: true<br>
+&ensp;  tasks:<br>
   <ul>
 </ul>
-  - name: Install docker.io<br>
-    apt:<br>
-      force_apt_get: yes<br>
-      update_cache: yes<br>
-      name: docker.io<br>
-      state: present
+&ensp;  - name: Install docker.io<br>
+&ensp;    apt:<br>
+&ensp;      force_apt_get: yes<br>
+ &ensp;     update_cache: yes<br>
+&ensp;      name: docker.io<br>
+ &ensp;     state: present
 
 
   - name: Install python3-pip<br>
