@@ -129,54 +129,54 @@ touch /etc/ansible/install-elk.yml
 
 nano /etc/ansible/install-elk.yml
 
----
-- name: Configure Elk VM with Docker
-  hosts: elk
-  remote_user: RedAdmin
-  become: true
-  tasks:
-  - name: Install docker.io
-    apt:
-      force_apt_get: yes
-      update_cache: yes
-      name: docker.io
+---<br>
+- name: Configure Elk VM with Docker<br>
+  hosts: elk<br>
+  remote_user: RedAdmin<br>
+  become: true<br>
+  tasks:<br>
+  - name: Install docker.io<br>
+    apt:<br>
+      force_apt_get: yes<br>
+      update_cache: yes<br>
+      name: docker.io<br>
       state: present
 
-  - name: Install python3-pip
-    apt:
-      force_apt_get: yes
-      name: python3-pip
+  - name: Install python3-pip<br>
+    apt:<br>
+      force_apt_get: yes<br>
+      name: python3-pip<br>
       state: present
  
-  - name: Install Docker module
-    pip:
-      name: docker
+  - name: Install Docker module<br>
+    pip:<br>
+      name: docker<br>
       state: present
  
-  - name: Increase virtual memory
+  - name: Increase virtual memory<br>
     command: sysctl -w vm.max_map_count=262144
 
-  - name: use more memory
-    sysctl:
-      name: vm.max_map_count
-      value: '262144'
-      state: present
+  - name: use more memory<br>
+    sysctl:<br>
+      name: vm.max_map_count<br>
+      value: '262144'<br>
+      state: present<br>
       reload: yes
 
-  - name: download and launch a docker elk container
-    docker_container:
-      name: elk
-      image: sebp/elk:761
-      state: started
-      restart_policy: always
-      published_ports:
-        - 5601:5601
-        - 9200:9200
+  - name: download and launch a docker elk container<br>
+    docker_container:<br>
+      name: elk<br>
+      image: sebp/elk:761<br>
+      state: started<br>
+      restart_policy: always<br>
+      published_ports:<br>
+        - 5601:5601<br>
+        - 9200:9200<br>
         - 5044:5044
  
-  - name: Enable docker service
-    systemd:
-      name: docker
+  - name: Enable docker service<br>
+    systemd:<br>
+      name: docker<br>
       enabled: yes
 
 Ctrl + x  to save and exit
