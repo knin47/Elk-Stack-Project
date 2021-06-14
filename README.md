@@ -97,7 +97,7 @@ The following screenshot displays the result of running `docker ps` after succes
    </head>
 
    <body>
-      <img src="https://github.com/knin47/Project-1/blob/main/Images/docker%20ps%20for%20elk.png?raw=true" alt="Simply Easy Learning" width="80000" height="50">
+      <img src="https://github.com/knin47/Project-1/blob/main/Images/docker%20ps%20for%20elk.png?raw=true" alt="Simply Easy Learning" width="80000" height="20">
    </body>
 </html>
 
