@@ -159,6 +159,8 @@ nano /etc/ansible/install-elk.yml
   remote_user: RedAdmin<br>
   become: true<br>
   tasks:<br>
+  <ul>
+</ul>
   - name: Install docker.io<br>
     apt:<br>
       force_apt_get: yes<br>
@@ -166,8 +168,7 @@ nano /etc/ansible/install-elk.yml
       name: docker.io<br>
       state: present
 
-<ul>
-</ul>
+
   - name: Install python3-pip<br>
     apt:<br>
       force_apt_get: yes<br>
